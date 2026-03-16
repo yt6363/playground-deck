@@ -368,6 +368,35 @@
 
   .hl { color: var(--text); font-weight: 400; }
 
+
+  /* VALUE MAP */
+  .value-map { margin-top: 28px; }
+  .value-row {
+    display: flex;
+    gap: 24px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border);
+    align-items: flex-start;
+  }
+  .value-row:first-child { border-top: 1px solid var(--border); }
+  .value-need {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    min-width: 200px;
+    flex-shrink: 0;
+    padding-top: 2px;
+    line-height: 1.4;
+  }
+  .value-done {
+    font-size: 0.9rem;
+    line-height: 1.55;
+    color: var(--text-dim);
+    font-weight: 300;
+  }
+
   /* MOBILE RESPONSIVE */
   @media (max-width: 768px) {
     .slide { padding: 48px 36px; }
@@ -382,6 +411,9 @@
     .reason-list li { font-size: 0.92rem; padding: 14px 0; gap: 12px; }
     .contact-links { gap: 10px; margin-top: 28px; }
     .contact-link { padding: 10px 16px; font-size: 0.6rem; }
+    .value-need { min-width: 160px; font-size: 0.58rem; }
+    .value-done { font-size: 0.85rem; }
+    .value-row { gap: 16px; padding: 12px 0; }
     .nav-hint { display: none; }
     .slide-label { font-size: 0.5rem; max-width: 40%; }
     .timer-container { top: 12px; right: 16px; max-width: 55%; }
@@ -417,6 +449,9 @@
     .reason-list { margin-top: 20px; }
     .reason-list li { font-size: 0.82rem; line-height: 1.5; padding: 12px 0; gap: 10px; }
     .reason-num { font-size: 0.58rem; padding-top: 2px; }
+    .value-row { flex-direction: column; gap: 6px; padding: 10px 0; }
+    .value-need { min-width: unset; font-size: 0.5rem; }
+    .value-done { font-size: 0.78rem; line-height: 1.45; }
     .contact-links { flex-direction: column; gap: 8px; margin-top: 24px; }
     .contact-link { padding: 10px 14px; font-size: 0.55rem; letter-spacing: 0.15em; text-align: center; width: 100%; }
     .slide-label { font-size: 0.42rem; letter-spacing: 0.2em; top: 12px; left: 14px; max-width: 30%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
@@ -438,6 +473,8 @@
     .card-desc { font-size: 0.72rem; line-height: 1.5; margin-bottom: 10px; }
     .stat-chip { font-size: 0.42rem; padding: 2px 4px; }
     .tech-badge { font-size: 0.4rem; padding: 1px 4px; }
+    .value-done { font-size: 0.72rem; }
+    .value-need { font-size: 0.46rem; }
     .reason-list li { font-size: 0.78rem; line-height: 1.45; padding: 10px 0; gap: 8px; }
     .reason-num { font-size: 0.55rem; min-width: 18px; }
     .contact-link { padding: 9px 12px; font-size: 0.5rem; }
@@ -471,7 +508,7 @@
 </head>
 <body>
 
-<div class="slide-label" id="slideLabel">01 / 06</div>
+<div class="slide-label" id="slideLabel">01 / 07</div>
 <div class="timer-container">
   <a href="https://calendly.com/yashwanthtatineni916/coffee-chat" target="_blank" class="coffee-link">15 MIN COFFEE CHAT? I'LL WORK AROUND YOUR SCHEDULE &rarr;</a>
 </div>
@@ -597,7 +634,38 @@
     </div>
   </div>
 
-  <!-- SLIDE 5: WHY PLAYGROUND -->
+
+  <!-- SLIDE 5: HOW I ADD VALUE -->
+  <div class="slide" data-label="THE FIT">
+    <div class="slide-inner">
+      <div class="section-tag stagger">The Fit</div>
+      <h2 class="section-title stagger">What you need <span style="color: var(--accent);">&rarr;</span> What I've done</h2>
+      <div class="value-map">
+        <div class="value-row stagger">
+          <div class="value-need">Debug ambiguous issues</div>
+          <div class="value-done">Root cause analysis on cross-system conversion decline at Alstream. Coordinated fixes across product and engineering, cut error rates 30%.</div>
+        </div>
+        <div class="value-row stagger">
+          <div class="value-need">Build self-serve tools</div>
+          <div class="value-done">Reporting dashboards that eliminated 40% of recurring ad-hoc requests for non-technical stakeholders.</div>
+        </div>
+        <div class="value-row stagger">
+          <div class="value-need">Work with engineering</div>
+          <div class="value-done">Sprint planning, backlog refinement, UAT cycles, defect triage at Alstream. Wrote specs engineers shipped from.</div>
+        </div>
+        <div class="value-row stagger">
+          <div class="value-need">Own full lifecycle</div>
+          <div class="value-done">Three Axis from zero: customer discovery, PRDs, engineering sprints, QA, rollout. Every edge case was mine.</div>
+        </div>
+        <div class="value-row stagger">
+          <div class="value-need">Solve ops problems fast</div>
+          <div class="value-done">Structured research across 3 teams, translated findings into prioritized backlog items adopted across departments.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 6: WHY PLAYGROUND -->
   <div class="slide" data-label="WHY PLAYGROUND">
     <div class="slide-inner">
       <div class="section-tag stagger">Why I'm Here</div>
@@ -627,7 +695,7 @@
     </div>
   </div>
 
-  <!-- SLIDE 6: LET'S TALK -->
+  <!-- SLIDE 7: LET'S TALK -->
   <div class="slide" data-label="LET'S TALK">
     <div class="slide-inner" style="text-align: center;">
       <div class="hero-text stagger" style="font-size: 3.5rem;">
