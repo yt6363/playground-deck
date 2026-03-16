@@ -9,19 +9,19 @@
   @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
   :root {
-    --bg: #050505;
-    --surface: #0a0a0a;
-    --border: #1a1a1a;
-    --border-hover: #2a2a2a;
-    --text: #e8e8e8;
-    --text-dim: #888;
-    --text-muted: #555;
-    --green: #00e600;
-    --green-dim: #00e60022;
-    --green-glow: #00e60044;
+    --bg: #fafafa;
+    --surface: #f0f0f0;
+    --border: #e0e0e0;
+    --border-hover: #c8c8c8;
+    --text: #1a1a1a;
+    --text-dim: #555;
+    --text-muted: #999;
+    --green: #16a34a;
+    --green-dim: #16a34a22;
+    --green-glow: #16a34a44;
     --accent: #066dfe;
-    --accent-dim: #066dfe22;
-    --accent-glow: #066dfe44;
+    --accent-dim: #066dfe15;
+    --accent-glow: #066dfe33;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -47,7 +47,7 @@
   .coffee-link {
     background: none;
     border: none;
-    color: #ffffff;
+    color: #555;
     font-family: 'Space Mono', monospace;
     font-size: 0.6rem;
     letter-spacing: 0.12em;
@@ -276,9 +276,9 @@
     background: var(--green-dim);
   }
   .card-status.dev {
-    border: 1px solid #f59e0b33;
-    color: #f59e0b;
-    background: #f59e0b11;
+    border: 1px solid #f59e0b44;
+    color: #d97706;
+    background: #f59e0b15;
   }
 
   .tech-row {
@@ -345,11 +345,11 @@
   .contact-link.primary {
     background: var(--accent);
     border-color: var(--accent);
-    color: #000;
+    color: #fff;
   }
   .contact-link.primary:hover {
-    background: #3388ff;
-    border-color: #3388ff;
+    background: #0055cc;
+    border-color: #0055cc;
   }
 
   .slide.active .stagger { animation: fadeUp 0.5s ease both; }
@@ -366,7 +366,7 @@
     to { opacity: 1; transform: translateY(0); }
   }
 
-  .hl { color: var(--text); font-weight: 400; }
+  .hl { color: var(--text); font-weight: 500; }
 
 
 
